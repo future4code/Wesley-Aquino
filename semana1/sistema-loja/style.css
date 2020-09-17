@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.cabeca {
+    background-color: rgb(92, 184, 39);
+}
+
+#boasvindas {
+    text-align: center;
+    font-size: 100px;
+    color: rgb(27, 141, 175);
+    font-style: normal;
+}
+
+#frase {
+    text-align: center;
+    font-size: 90px;
+    color: rgb(59, 57, 185);
+}
+
+#nome {
+    background-color: rgb(92, 184, 39);
+    font-size: 100px;
+    text-align: center;
+}
+
+div a {
+    margin-top: 100px;
+    margin-left: 150px;
+    padding: 80px;
+    font-size: 50px;
+    color: black;
+}
+
+#redes {
+    padding: 100px;
+    text-align: center;
+    font-size: 80px;
+}
+
+div img {
+    padding: 100px;
+    margin-left: 100px;
+    margin-right: 50px;
+    
+}
+
+.imgredesocial {
+    margin: 200px;
+    width: 5%;
+}
+
+#rodape {
+    margin-bottom: 0px;
+    padding: 50px;
+    background-color: rgb(92, 184, 39) ;
+}
+
+div p {
+    text-align: center;
+    font-size: 100px;
+}
+
+#background {
+    float: left;
+    
+}
+
+#funcionarios {
+    margin-top: 100px;
+    margin-left: 50px;
+    font-size: 50px;
+
+}
+
+#adicionarproduto {
+    font-size: 80px;
+    text-align: center;
+    padding: 200px;
+}
+
+.addproduct {
+    font-size: 50px;
+    margin-left: 100px;
+}
+
+#controleestoque {
+    padding: 100px;
+    text-align: center;
+    font-size: 50px;
+    color: red;
+
+}
+
+.campo {
+    font-size: 50px;
+    padding: 50px;
+}
+
+.descricaoestoque{
+    text-align: center;
+    font-size: 30px;
+    padding: 50px;
+}
+
+.nomefuncionario {
+    margin-left: 100px;
+    font-size: 50px;
+}
+
+.form {
+    width: 5%; 
+    
+}
+
+.ilustracao {
+    margin: 20px;
+}
