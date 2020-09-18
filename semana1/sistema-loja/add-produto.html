@@ -9,46 +9,47 @@
 </head>
 <body>
     <div>
-        <p id="nome">Bololândia</p>
+        <p class="nome">Bololândia</p>
     </div>
     
     <div>
-        <a href="index.html">Página Inicial</a>
-        <a href="ctrl-estoque.html">Controle de Estoque</a>
-        <a href="#">Adicionar Produto</a>
-        <a href="funcionarios.html">Funcionários</a>
+        <a class="menu" href="index.html">Página Inicial</a>
+        <a class="menu" href="ctrl-estoque.html">Controle de Estoque</a>
+        <a class="menu" href="#">Adicionar Produto</a>
+        <a class="menu" href="funcionarios.html">Funcionários</a>
     </div>
 
-    
+    <div id="backgroundadd">
+
     <h2 id="adicionarproduto">Adicionar Produto</h2>
     <form action="/action_page.php" method="get">
-        <div>
-            <label class="addproduct" for="link-foto">Link para foto: </label>
-            <input class="form" type="url" id="link-foto" name="link-foto">
-        </div>
         
-        <div>
-            <label class="addproduct" for="descricao">Descrição do produto: </label>
-            <input class="form" type="text" id="descricao" name="descricao">
-        </div>
+            <label class="addproduct" for="link-foto"></label>
+            <input class="form" type="url" id="link-foto" name="link-foto" placeholder="Link para foto ">
         
-        <div>
-            <label class="addproduct" for="preco">Preço (em R$): </label>
-            <input class="form" type="number" id="preco" name="preço">
-        </div>
         
-        <div>
+        
+            <label class="addproduct" for="descricao"></label>
+            <input class="form" type="text" id="descricao" name="descricao" placeholder="Descrição do produto">
+        
+        
+        
+            <label class="addproduct" for="preco"></label>
+            <input class="form" type="number" id="preco" name="preço" placeholder="R$ Preço">
+        
+        
+        
             
-            <label class="addproduct" for="quantidade">Quantidade disponível: </label>
-            <input class="form" type="number" id="quantidade" name="quantidade">
-        </div>
+            <label class="addproduct" for="quantidade"></label>
+            <input class="form" type="number" id="quantidade" name="quantidade" placeholder="Disponíveis">
+        
 
-        <div class="form-add">
+        
             
-            <button type="submit">Adicionar</button>
-        </div>
+            <button id="form-add" type="submit">Adicionar</button>
+    </div>    
 
-        <div id="rodape">
+        <div class="footer">
         
 
         </div>

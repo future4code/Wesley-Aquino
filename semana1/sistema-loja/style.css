@@ -8,36 +8,37 @@
 }
 
 #boasvindas {
+    padding: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
     font-size: 100px;
-    color: rgb(27, 141, 175);
+    color: rgb(0, 0, 0);
     font-style: normal;
 }
 
 #frase {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 20px;
     text-align: center;
-    font-size: 90px;
-    color: rgb(59, 57, 185);
+    font-size: 50px;
+    color: rgb(0, 0, 0);
 }
 
-#nome {
+.nome {
+    text-align: center;
+    padding: 20px;
     background-color: rgb(92, 184, 39);
     font-size: 100px;
     text-align: center;
 }
 
-div a {
-    margin-top: 100px;
-    margin-left: 150px;
-    padding: 80px;
-    font-size: 50px;
-    color: black;
-}
+
 
 #redes {
-    padding: 100px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0px;
     text-align: center;
-    font-size: 80px;
+    font-size: 50px;
 }
 
 div img {
@@ -48,13 +49,17 @@ div img {
 }
 
 .imgredesocial {
-    margin: 200px;
-    width: 5%;
+    padding: 20px;
+    margin-bottom: 5px;
+    margin-left: 650px;
+    width: 3%;
 }
 
 #rodape {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
     margin-bottom: 0px;
-    padding: 50px;
+    padding: 10px;
     background-color: rgb(92, 184, 39) ;
 }
 
@@ -69,16 +74,31 @@ div p {
 }
 
 #funcionarios {
-    margin-top: 100px;
+    background-color:lightseagreen;
+    margin-top: 0px;
     margin-left: 50px;
     font-size: 50px;
 
 }
 
+.form {
+    margin-bottom: 50px;
+    width: px;
+    height: 40px;
+
+}
+
 #adicionarproduto {
-    font-size: 80px;
+    margin-top: 0px;
+    margin-bottom: 100px;
+    font-size: 100px;
     text-align: center;
-    padding: 200px;
+    padding: 100px;
+}
+
+.addproduct {
+    
+    text-align: center;
 }
 
 .addproduct {
@@ -87,34 +107,91 @@ div p {
 }
 
 #controleestoque {
+    margin-left: 590px;
     padding: 100px;
-    text-align: center;
+    text-align: left;
     font-size: 50px;
     color: red;
 
 }
 
 .campo {
+    border: 1px solid black;
     font-size: 50px;
     padding: 50px;
 }
 
 .descricaoestoque{
+    border: 1px solid black;
     text-align: center;
-    font-size: 30px;
-    padding: 50px;
+    font-size: 50px;
+    padding: 0px;
 }
 
 .nomefuncionario {
+    padding: 50px;
     margin-left: 100px;
     font-size: 50px;
 }
 
 .form {
-    width: 5%; 
+    color:black;
+    padding: 20px;
+    font-size: 50px;
+    width: 20%;
     
 }
 
 .ilustracao {
-    margin: 20px;
+    width: 300px;
+    margin: 0px;
+}
+
+#fotofundo {
+    padding: 0px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    margin-left: 750px;
+    width: 60%;
+}
+
+.backgroundpaginas {
+    
+    background-color: lightseagreen;
+}
+
+#fundoprodutos {
+    padding: 20px;
+    background-color: lightseagreen;
+}
+
+.menu {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: ;
+    margin-top: 10px;
+    margin-left: 500px;
+    margin-bottom: 0px;
+    padding: 0px;
+    font-size: 50px;
+    color: black; 
+}
+
+#backgroundadd {
+    background-color: lightseagreen;
+
+}
+
+.footer {
+    padding: 100px;
+    background-color: rgb(92, 184, 39);
+}
+
+#form-add {
+    width: 150px;
+    font-size: 30px;
+    padding: 10px;
+}
+
+#fundoredessociais {
+    background-color: rgb(92, 184, 39)  ;
 }
