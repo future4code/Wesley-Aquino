@@ -50,6 +50,7 @@ div img {
 }
 
 .botao-amarelo {
+    outline: none;
     border: none;
     margin: 10px;
     background-color: #ffaf43;
