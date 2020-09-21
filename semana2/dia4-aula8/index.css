@@ -29,9 +29,13 @@ img {
     width: 100px;
 }
 
-div>p:first-child {
-    display: inline;
+#fraseinicio {
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
 }
+
 
 div img {
     background: black;
@@ -70,12 +74,16 @@ div img {
   **/
 
 #container-de-descricao {
+    height: 500px;
     background-color: #2274a5;
     color: white;
 }
 
 #container-de-descricao>ol {
-    padding: 15px 0px;
+    
+    margin-top: 1%;   
+    padding: 1%;  
+    
 }
 
 #container-para-comprar {
@@ -94,6 +102,8 @@ div img {
   *  ESTILOS COMPRAR 
   *
   **/
+
+
 
 div:nth-child(2),
 div:last-child {
