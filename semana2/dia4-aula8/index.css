@@ -49,7 +49,7 @@ div img {
 }
 
 .botao-amarelo {
-    margin: 150px;
+    margin: 10px;
     background-color: #ffaf43;
     width: 250px;
     height: 40px;
@@ -61,7 +61,7 @@ div img {
 
 
 .botao-amarelo:hover {
-    background-color: #c44f00;
+    background-color: yellow;
 }
 
 .container {
@@ -109,6 +109,9 @@ div img {
     font-size: 60px;
 }
 
+#bora {
+    font-family: Arial, Helvetica, sans-serif;
+}
 .lista {
     
     margin-left: 820px;
@@ -157,7 +160,8 @@ td button:active {
 
 
 #back-button {
-    margin: auto ;
+    margin-top: 200px;
+    margin-left: 900px ;
     background-color: white;
     width: 100px;
     height: 20px;
@@ -168,12 +172,12 @@ td button:active {
 }
 
 #back-button:hover {
-    background-color: #635a3d
+    background-color: yellow ;
 }
 
 #tabela {    
     font-family: Arial, Helvetica, sans-serif ;
-    margin: auto;    
+    margin: auto ;    
     text-align: center;
 }
 
