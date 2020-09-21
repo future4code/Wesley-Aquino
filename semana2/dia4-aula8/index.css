@@ -17,10 +17,12 @@ h2 {
 }
 
 #input {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
     border-top: white;
     border-left: white;
     border-right: white;
-    height: 20px;
+    height: 30px;
     width: 500px;
 }
 
@@ -177,4 +179,8 @@ td button:active {
 
 .produto {
     width: 40px;
+}
+
+#jeans {
+    background-color: white;
 }
