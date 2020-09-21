@@ -16,7 +16,10 @@ h2 {
     text-align: center;
 }
 
-input {
+#input {
+    border-top: white;
+    border-left: white;
+    border-right: white;
     height: 20px;
     width: 500px;
 }
