@@ -122,6 +122,7 @@ div:last-child {
 }
 
 table {
+    font-size: 20px;
     width: 60%;
 }
 
@@ -140,6 +141,7 @@ td button {
 
 
 #back-button {
+    margin: auto ;
     background-color: white;
     width: 100px;
     height: 20px;
@@ -151,4 +153,14 @@ td button {
 
 #back-button:hover {
     background-color: #635a3d
+}
+
+#tabela {    
+    font-family: Arial, Helvetica, sans-serif ;
+    margin: auto;    
+    text-align: center;
+}
+
+.produto {
+    width: 40px;
 }
