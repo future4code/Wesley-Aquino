@@ -140,7 +140,17 @@ grid-template-columns: 50px 1fr 1fr 1fr 50px
 
 grid-template-columns: 75px 3fr 2fr;
 
+/* Level 26 */
 
+grid-template-rows: 50px 0fr 0fr 0fr;
+
+/* Level 27 */
+
+grid-template: 60% 40% / 200px;
+
+/* Level 28 */
+
+grid-template: 1fr 50px / 20% 80%
 
 
 
