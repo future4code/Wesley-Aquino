@@ -1,0 +1,70 @@
+* {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+#background {
+    background-color: black;
+
+}
+
+h1 {
+    margin-top: 50px;
+    margin-bottom: 25px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 100px;
+    text-align: center;
+    color: red;
+}
+
+h2 {
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    color: white;
+
+
+}
+.menu {
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: right;
+    font-size: 25px;
+    float: right;
+    padding: 10px;
+    
+}
+
+#divmenu {
+    margin-right: 0px;
+    
+
+}
+
+#ulmenu li :hover {
+    background-color: red;
+    padding: 20px;
+}
+
+#ulmenu {
+  
+}
+
+.projetoseletivo {
+    color: white;
+    font-size: 20px;
+    margin: 50px;
+    padding: 50px;
+}
+
+.sitebolos {
+    color: white;
+    font-size: 50px;
+    margin: 50px;
+    padding: 50px;
+}
+
+#siteprojetoseletivo {
+    width: 30%;
+}
