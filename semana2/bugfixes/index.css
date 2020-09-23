@@ -1,0 +1,200 @@
+/** 
+  *
+  *  ESTILOS GERAIS 
+  *
+  **/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    background-color: #fe7e02;
+    padding: 10px 5px 10px 5px;
+    color: white;
+    text-align: center;
+}
+
+#input {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    width: 500px;
+    color: black;
+    background-color: #cad1e2;
+    padding: 10px;
+    border: none;
+    outline: none;
+    margin-top: 0px;
+
+}
+
+button:focus {
+    color: white;
+}
+
+img {
+    width: 100px;
+}
+
+#fraseinicio {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    padding-top: 5%;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+
+div img {
+    background: black;
+}
+
+.botao-amarelo {
+    outline: none;
+    border: none;
+    margin: 10px;
+    background-color: #ffaf43;
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 20px;
+    color: white;
+}
+
+
+
+.botao-amarelo:hover {
+    background-color: yellow;
+}
+
+.container {
+    height: 500px;
+    text-align: center;
+}
+
+#icone {
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    margin-top: 0px;
+}
+
+
+/** 
+  *
+  *  ESTILOS HOME 
+  *
+  **/
+
+#container-de-descricao {
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    height: 500px;
+    background-color: #2274a5;
+    color: white;
+}
+
+#container-de-descricao>ol {
+    
+    margin-top: 1%;   
+    padding: 1%;  
+    
+}
+
+#container-para-comprar {
+    background-color: #e7eb90;
+}
+
+#container-para-comprar>p {
+    color: #c44f00;
+    padding: 100px 0;
+    font-size: 60px;
+}
+
+#bora {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.lista {
+    
+    margin-left: 820px;
+    text-align: justify;
+}
+
+
+/**
+  *
+  *  ESTILOS COMPRAR 
+  *
+  **/
+
+
+
+div:nth-child(2),
+div:last-child {
+    text-align: center;
+}
+
+table {
+    font-size: 20px;
+    width: 60%;
+}
+
+td button {
+    outline: none;
+    background-color: #fadf63;
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+
+td button:hover {
+    background-color: tomato;
+}
+
+td button:active {
+    background-color: yellow;
+}
+
+.container-do-search {
+    margin-top: 20px;
+    height: 100px;
+}
+
+
+#back-button {
+    outline-style: none ;
+    margin-top: 200px;
+    margin-left: 900px ;
+    background-color: white;
+    width: 100px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 10px;
+    color: black;
+}
+
+#back-button:hover {
+    background-color: yellow ;
+}
+
+#tabela {    
+    font-family: Arial, Helvetica, sans-serif ;
+    margin: auto ;    
+    text-align: center;
+}
+
+.produto {
+    width: 40px;
+}
+
+#jeans {
+    background-color: white;
+}
