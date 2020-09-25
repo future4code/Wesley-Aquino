@@ -1,0 +1,133 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+/* Desktop */
+
+#main-container {
+     width: auto; 
+}
+
+#first-block {
+    background-color: red;
+    height: 9vw; /* Adicionado a altura */
+}
+
+#second-block { /* Adicionado a id ao css */
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 3vw;
+    grid-column-gap: 3vw;
+    margin: 1vw;
+}
+
+#third-block { /* Adicionado a id ao css */
+    height: 30vw ;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 3vw;
+    margin: 1vw;
+}
+
+#fourth-block { /* Adicionado a id ao css */
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 3vw;
+    margin: 1vw;
+}
+
+.blue-block {
+    background-color: blue;
+    height: 9vw;   
+    
+}
+
+.yellow-block {
+    background-color: yellow;
+    
+}
+
+.green-block {
+    background-color: green;
+    
+}
+
+.black-block {
+    background-color: black;
+    color: white;    
+}
+
+.white-block {
+    background-color: white;
+    border: 1px solid black;
+    height: 12vw;    
+}
+
+/* Tablet */
+
+@media screen and (max-width: 800px) {
+
+body {
+    
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+   
+}
+
+#first-block {
+    background-color: red;
+    height: 9vw; /* Adicionado a altura */
+}
+
+#second-block { /* Adicionado a id ao css */
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 3vw;
+    grid-column-gap: 3vw;
+    margin: 1vw;
+}
+
+.green-block {
+    background-color: green;
+    width: 100%;
+    align-items: center;
+    grid-column: 1/4;
+    }
+
+.blue-block {
+    background-color: blue;
+       
+        
+    }
+
+.yellow-block {
+    background-color:  yellow;
+    
+        
+    }
+
+.white-block {
+    background-color: white;
+    border: 1px solid black;
+    height: 12vw;
+        
+    }
+
+#fourth-block { /* Adicionado a id ao css */
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 3vw;
+    margin: 1vw;
+    }
+
+}
