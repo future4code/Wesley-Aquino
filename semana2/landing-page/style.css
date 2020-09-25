@@ -1,0 +1,210 @@
+* { /* reset */
+    margin: 0;
+    padding: 0;
+
+@media screen and (min-width: 1280px) and (max-width: 667px)
+
+}
+
+header { /* Barra Superior de Menu */
+    width: 100vw;
+    height: 5vw;
+    background-color: rgb(223, 148, 135);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#imagemmenu { /* Logotipo da barra de menu superior */
+    width: 5vw;
+    height: 4vw;
+}
+
+#section1 { /* Estrutura Principal do site */
+    padding: 2vw;
+    color: black;
+    font-size: 20px;
+    text-align: justify;
+    font-family: cursive;
+    display: grid;
+    grid-template-columns: 2fr 1fr 3fr;
+    justify-items: flex-start;
+    align-items: center;
+}
+
+#section2 { /* Sessão sobre cartão de crédito */
+    background-color: rgb(247, 204, 196);
+    padding: 2vw;
+    color: black;
+    font-size: 20px;
+    text-align: justify;
+    font-family: cursive;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+
+#section3 {
+    background-color: khaki;
+    padding: 2vw;
+    color: black;
+    font-size: 20px;
+    text-align: justify;
+    font-family: cursive;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+
+#descricaocartao{ /* Texto de descrição do cartão de crédito F4 */
+    padding: 2vw;
+}
+
+.menu:hover { /* Sombra ao passar o mouse pelo menu superior */
+    background-color: chocolate;
+    border-radius: 2vw; 
+}
+
+#descricaoquemsomos {
+    font-size: 3vw;
+}
+
+.menu {/* Estilização do menu top */
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: cursive;
+
+}
+
+#cartao{ /* Imagem do cartao */
+    width: 30vw;
+
+}
+
+#saibamais {
+    text-decoration: none;
+    color: red
+}
+
+#imgmain { /* Logotipo seção principal */
+    width: 30vw;
+    margin: 2vw;      
+    
+}
+
+.redes { /* Imagem de direcionamento para redes sociais */
+    width: 5vw;
+    height: 5vw;
+}
+
+
+footer { /* rodapé do site */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(65, 65, 65);
+    width: 100vw;
+    height: 20vw;
+}
+
+#dados {/* Texto com dados para contato no footer */
+    font-size: 2vw;
+    font-style: italic;
+    font-family: cursive;
+    color: white;
+}
+
+@media screen and (min-width: 375px) and (max-width: 667px){
+
+header { /* Barra Superior de Menu */
+    width: 100vw;
+    height: 5vw;
+    background-color: rgb(223, 148, 135);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#imagemmenu { /* Logotipo da barra de menu superior */
+    width: 1vw;
+    height: 1w;
+}
+
+.menu {/* Estilização do menu top */
+    color: black;
+    text-decoration: none;
+    font-size: 1.5vw;
+    font-family: cursive;
+
+}
+
+#descricaocartao{ /* Texto de descrição do cartão de crédito F4 */
+    padding: 1vw;
+    text-align: inherit;
+}
+
+#descricaoquemsomos {
+    font-size: 3vw;
+    padding: 5vw;
+}
+
+#section1 { /* Estrutura Principal do site */
+    height: 80vw;
+    padding: 0vw;
+    color: black;
+    font-size: 15px;
+    text-align: justify;
+    font-family: cursive;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+#section2 { /* Sessão sobre cartão de crédito */
+    background-color: rgb(247, 204, 196);
+    padding: 2vw;
+    color: black;
+    font-size: 15px;
+    text-align: justify;
+    font-family: cursive;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+#section3 {
+    width: 100vw;
+    background-color: khaki;
+    color: black;
+    font-size: 15px;
+    text-align: justify;
+    font-family: cursive;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+
+#aplicativo {
+    width: 80vw;
+}
+
+}
