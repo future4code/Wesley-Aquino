@@ -6,8 +6,7 @@
 
 }
 
-header { /* Barra Superior de Menu */
-    width: 100vw;
+header { /* Barra Superior de Menu */    
     height: 5vw;
     background-color: rgb(223, 148, 135);
     display: flex;
@@ -21,7 +20,7 @@ header { /* Barra Superior de Menu */
     height: 4vw;
 }
 
-#section1 { /* Estrutura Principal do site */
+#section1 { /* Estrutura Principal do site */    
     padding: 2vw;
     color: black;
     font-size: 20px;
@@ -33,7 +32,7 @@ header { /* Barra Superior de Menu */
     align-items: center;
 }
 
-#section2 { /* Sessão sobre cartão de crédito */
+#section2 { /* Sessão sobre cartão de crédito */    
     background-color: rgb(247, 204, 196);
     padding: 2vw;
     color: black;
@@ -48,7 +47,7 @@ header { /* Barra Superior de Menu */
     text-align: center;
 }
 
-#section3 {
+#section3 {    
     background-color: khaki;
     padding: 2vw;
     color: black;
@@ -106,13 +105,12 @@ header { /* Barra Superior de Menu */
 }
 
 
-footer { /* rodapé do site */
+footer { /* rodapé do site */    
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background-color: rgb(65, 65, 65);
-    width: 100vw;
+    background-color: rgb(65, 65, 65);    
     height: 20vw;
 }
 
