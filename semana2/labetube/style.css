@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 5vw;
+    width: 100vw;
+    background-color: red;
+
+}
+
+video {
+    width: 60vw;
+    height: 60vw;
+
+}
+
+main {
+    
+    width: 100vw;
+    height: 80vw;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    background-color: blue;
+    border: black;
+}
+
+.imagens {
+    display: grid;
+    align-items: center;
+    text-align: center;
+    height: 10vw;
+    margin: 2vw;
+}
+
+a {
+    color: black;
+}
+
+.voltar {
+    text-align: left;
+}
+
+#frasefooter {
+    text-align: center;
+    height: 3vw;
+    font-size: 2em;
+    background-color: red;
+}
+
+footer{
+    background-color: red;
+    height: 1vw;
+    width: 100vw;
+}
+
+.video {
+    margin-top: 1vw;
+    width: 1vw;
+    height: 1vw;
+}
+
+.descricaovideo {
+    margin-top: 5vw ;
+height: 0vw;
+}
