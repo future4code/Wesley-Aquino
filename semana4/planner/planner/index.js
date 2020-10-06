@@ -8,9 +8,12 @@ function criaTarefa(){
         alert ("Digite uma tarefa!")
         return
     }
-    listaDeTarefas.innerHTML += `<li>${input.value}</li>`
+    listaDeTarefas.innerHTML += `<li onclick="riscaTarefas(this)" id="elemento">${input.value}</li>`
     input.value = ""
-///}
-//function riscaTarefas(){
-//
-//}
+}
+function riscaTarefas(id){
+    id.style.textDecoration = "line-through";
+    
+    //const elementoNovo = document.getElementById("elemento").style.textDecoration ="line-through"
+    //console.log(elementoNovo.value)
+}
