@@ -8,7 +8,7 @@ function criaTarefa(){
         alert ("Digite uma tarefa!")
         return
     }
-    listaDeTarefas.innerHTML += `<li onclick="riscaTarefas(this)" id="elemento">${input.value}</li>`
+    listaDeTarefas.innerHTML += `<li onclick="riscaTarefas(this)">${input.value}</li>`
     input.value = ""
 }
 function riscaTarefas(id){
@@ -16,4 +16,8 @@ function riscaTarefas(id){
     
     //const elementoNovo = document.getElementById("elemento").style.textDecoration ="line-through"
     //console.log(elementoNovo.value)
+}
+
+function limpaTarefa(){
+    limpaTarefa.innerHTML = 
 }
