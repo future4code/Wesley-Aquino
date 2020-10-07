@@ -4,6 +4,7 @@ function criarPost(){
     const titulo = document.getElementById("titulo-post")
     const autor = document.getElementById("autor-post")
     const conteudo = document.getElementById("conteudo-post")
+    const imagem = document.getElementById("imagem-post")
    
     if(titulo.value === "" || autor.value === "" || conteudo.value === ""){
         alert ("Preencha todos os campos!")        
@@ -15,7 +16,7 @@ function criarPost(){
         titulo: titulo.value,
         autor: autor.value,
         conteudo: conteudo.value,
-       
+        imagem: imagem.value,       
     }
 
     arrayDePost = []
@@ -23,20 +24,20 @@ function criarPost(){
 
     let novoPost = document.getElementById("container-de-posts")
 
-    novoPost.innerHTML += `<h1 onclick="criarPost()">${post.titulo}</h1>`
-    novoPost.innerHTML += `<h4 onclick="criarPost()">${post.autor}</h4>`
-    novoPost.innerHTML += `<p onclick="criarPost()">${post.conteudo}</p>`
+    novoPost.innerHTML = `<p onclick="criarPost()">${post.titulo}\n${post.autor}\n${post.conteudo}</p>`
+    novoPost.innerHTML = `<img onclick="criarPost()" src=${post.imagem}>`
     titulo.value = ""
     autor.value = ""
     conteudo.value = ""
-    }
-
-    function fixarPost() {
-        if(arrayDePost.length === 1){
-            let coletaneaPost = document.getElementById("coletanea-posts")
-            coletaneaPost.innerHTML += `<p>${arrayDePost.value}</p>`
-        }
-    }
-}
-
+    imagem.value = ""
     
+
+    if(arrayDePost.length > 0){       
+        let coletaneaPost = document.getElementById("coletanea-post")
+        coletaneaPost.innerHTML += `<p>${post.titulo}\n${post.autor}\n${post.conteudo}</p>`
+        coletaneaPost.innerHTML += `<img src=${post.imagem}>`        
+        }
+    }      
+
+}
+       
