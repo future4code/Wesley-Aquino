@@ -145,17 +145,23 @@ saberSeEPar(arrayDeNumeros)     */
 
 // DESAFIO 1
 
+
 // 1.
+
 
 let chamaOutrafuncao = (argumento) => {
 	return argumento
 }
+
 console.log(chamaOutrafuncao(100))   
 
 // 2. incompleto
 
+
 const chamaOutrafuncao2 = (a, b) => {	
 	return a+b
 }
+
 const resultado = chamaOutraFuncao2(200, 300)   
+
 
