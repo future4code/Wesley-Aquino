@@ -52,5 +52,22 @@ c) true
 d) true 
 e) true   */
 
+/* 3.
+const quantidadeDeNumerosPares
+let i = 0
+while(i <= quantidadeDeNumerosPares) {
+  console.log(i*2)
+}  */
 
+// 4. 
 
+function descobreTipoDoTriangulo(a, b, c){
+    if (a === b && b === c) {
+        console.log("Triangulo Equilátero!")        
+    } else if (a !== b && b !== c && c !== a){
+        console.log("Triangulo Escaleno!")
+    } else if (a === b && b !== c || a === c && c !== b || b === c && c !== a){
+        console.log("Triangulo Isósceles!")
+    }
+}
+descobreTipoDoTriangulo(20, 20, 20)
