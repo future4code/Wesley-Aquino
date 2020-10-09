@@ -4,7 +4,7 @@
 
 2. Função que escolhe um tipo de investimento e calcula o valor que o investidor terá após o investimento. Função recebe como entrada dois parametros (tipoDeInvestimento, valor), na sequencia avalia qual caso de investimento que pe através do switch case. Variável novoMontante que chama a função de investimento em ações e valor 150 e outra que chama a mesma função com tipo de investimento tesouro direto e valor 200. Primeiro console.log imprime o valor de 165 e o segundo console.log imprime TIPO DE INVESTIMENTO INFORMADO INCORRETO.
 
-
+3. Código percorre o array numeros com o for of e se o numero for avaliado como par (atraves do resto da divisão 0) ele coloca esse numero no array1, caso nao se enquadrar nesse ele joga o numero no array2 (numeros ímpares). Primeiro console.log imprime 'Quantidade total de numero 14'. Segundo console.log imprime '6'. Terceiro console.log imprime 8.
 
 
 
