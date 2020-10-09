@@ -102,13 +102,19 @@ qualNumeroEMaior(15, 30)    */
 
 // EXERCICIOS DE FUNÇÃO
 
-//1.
+/*1.
 
 let maiorNumero = 0
 let menorNumero = Infinity
 
 let array = [1, 5, 15, 55, 20, 10, 17, 39, 50]
 
-function classificaNumeros(){
+function classificaNumeros(array){
 
 }
+classificaNumeros(array)    */
+
+let sayHello = function(parametro) {
+    alert ("Hello Labenu!")
+}
+const frase = sayHello("Hello Labenu!")
