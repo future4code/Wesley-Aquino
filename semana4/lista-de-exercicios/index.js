@@ -6,6 +6,6 @@
 
 3. Código percorre o array numeros com o for of e se o numero for avaliado como par (atraves do resto da divisão 0) ele coloca esse numero no array1, caso nao se enquadrar nesse ele joga o numero no array2 (numeros ímpares). Primeiro console.log imprime 'Quantidade total de numero 14'. Segundo console.log imprime '6'. Terceiro console.log imprime 8.
 
-
+4. Primeiro if: funcionalidade usando for of passa pelo array e verifica se o numero é menor que infinito, automaticamente irá parar no ultimo numero do array e armazenar ele na variavel numero1. Segundo if: Se o número for maior que zero(positivo) a variavel numero2 recebe o ultimo numero do positivo do array. console.log mostra 1590 e 1590
 
 */
