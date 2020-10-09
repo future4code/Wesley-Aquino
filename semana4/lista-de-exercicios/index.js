@@ -1,4 +1,4 @@
-/* Interpretação de Código
+/* INTEPRETAÇÃO DE CÓDIGO
 
 1. Este código converte o valor de dolar para reais. Através da função conversorDeMoeda que recebe um valor pelo prompt, retorna o valor em reais atraves da operação do return. Armazena o valor gerado na variavel meuDinheiro chamando a funçao com o valor 100. O console imprime o valor de entrada 100 multiplicado pelo valor que o usuario digitar.
 
@@ -10,9 +10,9 @@
 
 */
 
-// Lógica de Programação
+// LÓGICA DE PROGRAMAÇÃO
 
-/* Pode se percorrer com while, for, for of
+/* 1. Pode se percorrer com while, for, for of
 
 lista = [1, 2, 3, 4, 5]
 let i = 0
@@ -43,4 +43,14 @@ lista = [100, 200, 300, 400, 500]
 for (let numero of lista ){
     console.log(numero)
 }   */
+
+/* 2.
+
+a) false
+b) false
+c) true
+d) true 
+e) true   */
+
+
 
