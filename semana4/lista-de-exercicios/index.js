@@ -25,3 +25,13 @@ while ( i < lista.length){
 }
 console.log(lista) */
 
+/*
+// com for
+
+lista = [10, 20, 30, 40, 50]
+
+for (let i = 0; i < lista.length; i++) {
+    console.log(lista[i])
+}   
+
+*/
