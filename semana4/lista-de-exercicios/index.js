@@ -9,3 +9,19 @@
 4. Primeiro if: funcionalidade usando for of passa pelo array e verifica se o numero é menor que infinito, automaticamente irá parar no ultimo numero do array e armazenar ele na variavel numero1. Segundo if: Se o número for maior que zero(positivo) a variavel numero2 recebe o ultimo numero do positivo do array. console.log mostra 1590 e 1590
 
 */
+
+// Lógica de Programação
+
+/* Pode se percorrer com while, for, for of
+
+lista = [1, 2, 3, 4, 5]
+let i = 0
+
+// com while
+
+while ( i < lista.length){ 
+
+    i++
+}
+console.log(lista) */
+
