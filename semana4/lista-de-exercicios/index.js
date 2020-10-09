@@ -53,13 +53,20 @@ d) true
 e) true   */
 
 /* 3.
-const quantidadeDeNumerosPares
+const quantidadeDeNumerosPares = function(numero) {
 let i = 0
-while(i <= quantidadeDeNumerosPares) {
-  console.log(i*2)
-}  */
+while(i <= numero) { 
+    
+    console.log(i)
+    
+    i += 2
+}  
+}
 
-// 4. 
+const resultado = quantidadeDeNumerosPares(29) */
+
+
+/* 4. 
 
 function descobreTipoDoTriangulo(a, b, c){
     if (a === b && b === c) {
@@ -70,4 +77,38 @@ function descobreTipoDoTriangulo(a, b, c){
         console.log("Triangulo Isósceles!")
     }
 }
-descobreTipoDoTriangulo(20, 20, 20)
+descobreTipoDoTriangulo(20, 20, 20)    */
+
+// 5. 
+/*
+
+function qualNumeroEMaior(a, b){
+    let diferenca = a - b
+    if(a > b){
+        let maior = a
+        console.log("O é maior é ", a)
+    } else {
+        console.log("O maior é ", b)
+    }
+
+    if(a % b === 0){
+        console.log(a, " não é divisivel por", b)
+    } else {
+        console.log("")
+    }
+    console.log("a diferença entre ele é ", diferenca)
+}
+qualNumeroEMaior(15, 30)    */
+
+// EXERCICIOS DE FUNÇÃO
+
+//1.
+
+let maiorNumero = 0
+let menorNumero = Infinity
+
+let array = [1, 5, 15, 55, 20, 10, 17, 39, 50]
+
+function classificaNumeros(){
+
+}
