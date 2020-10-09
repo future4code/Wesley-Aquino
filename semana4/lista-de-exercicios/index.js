@@ -35,3 +35,12 @@ for (let i = 0; i < lista.length; i++) {
 }   
 
 */
+
+//com for of
+/*
+lista = [100, 200, 300, 400, 500]
+
+for (let numero of lista ){
+    console.log(numero)
+}   */
+
