@@ -114,7 +114,13 @@ function classificaNumeros(array){
 }
 classificaNumeros(array)    */
 
+// 2.
+/*
 let sayHello = function(parametro) {
     alert ("Hello Labenu!")
 }
-const frase = sayHello("Hello Labenu!")
+const frase = sayHello("Hello Labenu!")   */
+
+// EXERCICIOS DE OBJETOS
+
+// 1. array de objetos é uma lista que contém objetos (um objetos guarda uma serie de informações sobre algo). Se aproxima mais da vida real: exemplo: uma pessoa tem nome, idade, preferencias, experiencias, gostos, podemos guardar todas essas informações sobre ela em um unico objeto. Arrays de objetos podem ser utilizados para armazenar todas as informações sobre algo numa lista, a exemplo um site que cadastra o nome da pessoa, a cidade, o email, cria um objetos com isso e joga esse objeto no array de objetos de cadastro do site.
