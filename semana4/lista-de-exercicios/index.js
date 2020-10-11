@@ -125,7 +125,7 @@ const frase = sayHello("Hello Labenu!")   */
 
 // 1. array de objetos é uma lista que contém objetos (um objetos guarda uma serie de informações sobre algo). Se aproxima mais da vida real: exemplo: uma pessoa tem nome, idade, cpf, rg, gostos, podemos guardar todas essas informações sobre ela em um unico objeto. Arrays de objetos podem ser utilizados para armazenar todas as informações sobre algo numa lista, a exemplo um site que cadastra o nome da pessoa, a cidade, o email, cria um objetos com isso e joga esse objeto no array de objetos de cadastro do site.
 
-// 2. 
+/* 2. 
 
 function criaRetangulo(lado1, lado2){
     let perimetro = (lado1 + lado2) * 2
@@ -138,5 +138,19 @@ function criaRetangulo(lado1, lado2){
     }
     console.log(retangulo)
 }
-criaRetangulo(5, 10)   
+criaRetangulo(5, 10)   */
+
+/* 3.
+
+const filme = {
+    titulo: "Um tira muito suspeito",
+    ano: 1999,
+    diretor: "Les Mayfield",
+    atores: ["Martin Lawrence", "Peter Greene", "David Chappelle","Luke Wilson"]
+}
+console.log(`Venha assistir ao filme ${filme.titulo}, de ${filme.ano}, dirigido por ${filme.diretor} e estrelado por ${filme.atores}.`)    */
+
+
+
+
 
