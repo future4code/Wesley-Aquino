@@ -123,4 +123,13 @@ const frase = sayHello("Hello Labenu!")   */
 
 // EXERCICIOS DE OBJETOS
 
-// 1. array de objetos é uma lista que contém objetos (um objetos guarda uma serie de informações sobre algo). Se aproxima mais da vida real: exemplo: uma pessoa tem nome, idade, preferencias, experiencias, gostos, podemos guardar todas essas informações sobre ela em um unico objeto. Arrays de objetos podem ser utilizados para armazenar todas as informações sobre algo numa lista, a exemplo um site que cadastra o nome da pessoa, a cidade, o email, cria um objetos com isso e joga esse objeto no array de objetos de cadastro do site.
+// 1. array de objetos é uma lista que contém objetos (um objetos guarda uma serie de informações sobre algo). Se aproxima mais da vida real: exemplo: uma pessoa tem nome, idade, cpf, rg, gostos, podemos guardar todas essas informações sobre ela em um unico objeto. Arrays de objetos podem ser utilizados para armazenar todas as informações sobre algo numa lista, a exemplo um site que cadastra o nome da pessoa, a cidade, o email, cria um objetos com isso e joga esse objeto no array de objetos de cadastro do site.
+
+/* 2. 
+
+function criaRetangulo(lado1, lado2){
+    let perimetro = (lado1 + lado2) * 2
+    let area = (lado1 * lado2)
+    console.log(lado1, lado2, perimetro, area)
+}
+criaRetangulo(5, 10)   */
