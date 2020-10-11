@@ -131,8 +131,8 @@ function criaRetangulo(lado1, lado2){
     let perimetro = (lado1 + lado2) * 2
     let area = (lado1 * lado2)
     const retangulo = {
-        lado1: lado1,
-        lado2: lado2,
+        largura: lado1,
+        altura: lado2,
         perimetro: perimetro,
         area: area
     }
