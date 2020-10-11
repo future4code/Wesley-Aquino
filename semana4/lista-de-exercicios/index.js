@@ -150,7 +150,23 @@ const filme = {
 }
 console.log(`Venha assistir ao filme ${filme.titulo}, de ${filme.ano}, dirigido por ${filme.diretor} e estrelado por ${filme.atores}.`)    */
 
+/* 4.
 
 
+const fulano = {
+    nome: "Fulano",
+    idade: 99,
+    email: "fulanodetal@gmail.com",
+    endereco: "Rua dos bobos 0" 
+}
+const anonimizarPessoa = function(nome){
+    const anonimo = {
+        ...fulano,
+        nome: nome
+    }   
+    return anonimo
+}
+const novoObjeto = anonimizarPessoa("Anônimo")
 
-
+console.log(fulano)
+console.log(novoObjeto)    */
