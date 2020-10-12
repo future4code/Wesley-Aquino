@@ -208,3 +208,30 @@ const novoObjeto = anonimizarPessoa("Anônimo")
 console.log(fulano)
 console.log(novoObjeto)    */
 
+// EXERCÍCIOS FUNÇÕES DE ARRAY
+
+/* 1.
+// a.
+
+const pessoas = [
+	{ nome: "Pedro", idade: 20 },
+	{ nome: "João", idade: 10 },
+	{ nome: "Paula", idade: 12 },
+	{ nome: "Artur", idade: 89 } 
+]
+const soAdultos = pessoas.filter ((pessoa, index, pessoas) => {
+     return pessoa.idade >= 20    
+        
+})
+console.log(soAdultos)  
+
+// b.
+
+const soCriancasAdolescentes = pessoas.filter ((pessoa, index, pessoas) => {
+     return pessoa.idade < 20    
+        
+})
+console.log(soCriancasAdolescentes)      */
+
+// 2.
+
