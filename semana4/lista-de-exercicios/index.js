@@ -79,40 +79,77 @@ function descobreTipoDoTriangulo(a, b, c){
 }
 descobreTipoDoTriangulo(20, 20, 20)    */
 
-// 5. 
-/*
+/* 5. 
 
-function qualNumeroEMaior(a, b){
-    let diferenca = a - b
-    if(a > b){
-        let maior = a
-        console.log("O é maior é ", a)
+function numeros(a, b){
+    if(a > b) {
+        console.log(`O maior é ${a}`)
     } else {
-        console.log("O maior é ", b)
+        console.log(`O maior é ${b}`)
     }
 
     if(a % b === 0){
-        console.log(a, " não é divisivel por", b)
+        console.log(`${a} é divisível por ${b}`)
     } else {
-        console.log("")
+        console.log(`${a} não é divisível por ${b}`)
     }
-    console.log("a diferença entre ele é ", diferenca)
+
+    if(b % a === 0){
+        console.log(`${b} é divisível por ${a}` )
+    } else {
+        console.log(`${b} não é divisível por ${a}`)
+    }
+
+    if(a > b){
+        let maior = a - b
+        console.log(`A diferença entre eles é ${maior}`)
+    } else {
+        let menor = b - a
+        console.log(`A diferença entre eles é ${menor}`)
+    }
 }
-qualNumeroEMaior(15, 30)    */
+numeros(30, 20)      */
 
 // EXERCICIOS DE FUNÇÃO
 
 /*1.
 
+const numeros = [1, 2, 15, 55, 20, 10, 17, 39, 50, 100, 99]
+
+
 let maiorNumero = 0
 let menorNumero = Infinity
+let segundoMaior = 0
+let segundoMenor = Infinity
 
-let array = [1, 5, 15, 55, 20, 10, 17, 39, 50]
 
-function classificaNumeros(array){
+for (let i = 0; i < numeros.length; i++){
+    let elemento = numeros[i]
 
+    if (maiorNumero < elemento){
+        maiorNumero = elemento
+    }
+
+    if (segundoMaior < elemento && elemento !== maiorNumero){
+        segundoMaior = elemento
+    }
+
+    if (menorNumero > elemento){
+        menorNumero = elemento
+    }
+    if (segundoMenor > elemento && elemento !== menorNumero){
+        segundoMenor = elemento
+    }
 }
-classificaNumeros(array)    */
+
+console.log(segundoMaior)
+console.log(segundoMenor)
+
+
+//function classificaNumeros(array){
+
+//}
+//classificaNumeros(numeros)    */
 
 // 2.
 /*
@@ -170,3 +207,4 @@ const novoObjeto = anonimizarPessoa("Anônimo")
 
 console.log(fulano)
 console.log(novoObjeto)    */
+
