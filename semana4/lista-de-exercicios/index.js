@@ -233,5 +233,29 @@ const soCriancasAdolescentes = pessoas.filter ((pessoa, index, pessoas) => {
 })
 console.log(soCriancasAdolescentes)      */
 
-// 2.
+/* 2.
+
+// a.
+const array = [1, 2, 3, 4, 5, 6]
+
+const dobraValor = array.map((numero, index, array) => {
+    return numero * 2
+})
+console.log(dobraValor)
+
+// b.
+const transformaEmString = array.map((numero, index, array) => {
+    return String(numero * 3)
+})
+console.log(transformaEmString)
+
+// c.
+const parOuImpar = array.map((numero, index, array) => {
+    if(numero % 2 === 0){
+        return `${numero} é par`
+    }
+    if (numero % 2 !== 0)
+    return `${numero} é impar`
+})
+console.log(parOuImpar)   */
 
