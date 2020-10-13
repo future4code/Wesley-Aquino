@@ -112,8 +112,9 @@ numeros(30, 20)      */
 
 // EXERCICIOS DE FUNÇÃO
 
-/*1.
+//1. Criei a solução porém tive dificuldade para criar a função do exercício acima 
 
+/*
 const numeros = [1, 2, 15, 55, 20, 10, 17, 39, 50, 100, 99]
 
 
@@ -143,13 +144,14 @@ for (let i = 0; i < numeros.length; i++){
 }
 
 console.log(segundoMaior)
-console.log(segundoMenor)
+console.log(segundoMenor)    */
+
 
 
 //function classificaNumeros(array){
 
 //}
-//classificaNumeros(numeros)    */
+//classificaNumeros(numeros)        
 
 // 2.
 /*
