@@ -286,5 +286,38 @@ const pessoasQueNaoPodemAcessar = pessoas.filter ((pessoa, index, pessoas) => {
 console.log(pessoasQuePodemAcessar)
 console.log(pessoasQueNaoPodemAcessar)     */
 
+/* 4.
 
- 
+const consultas = [
+	{ nome: "João", genero: "masculino", cancelada: true, dataDaConsulta: "01/10/2019" },
+	{ nome: "Pedro", genero: "masculino", cancelada: false, dataDaConsulta: "02/10/2019" },
+	{ nome: "Paula", genero: "feminino", cancelada: true, dataDaConsulta: "03/11/2019" },
+	{ nome: "Márcia", genero: "feminino", cancelada: false, dataDaConsulta: "04/11/2019" }
+]
+
+let senhor = "Sr."
+let senhora = "Sra."
+let lembraLo = "lembrá-lo"
+let lembraLa = "lembrá-la"
+
+const consultasCanceladas = consultas.map((consulta, index, consultas)=> {
+    if(consulta.cancelada === false && consulta.genero === "masculino"){
+        return (`Olá, ${senhor} ${consulta.nome}. Estamos enviando esta mensagem para
+        ${lembraLo} da sua consulta no dia ${consulta.dataDaConsulta}. Por favor, acuse
+        o recebimento deste e-mail.`)
+    } else if (consulta.cancelada === false && consulta.genero === "feminino") {
+        return (`Olá, ${senhora} ${consulta.nome}. Estamos enviando esta mensagem para
+        ${lembraLa} da sua consulta no dia ${consulta.dataDaConsulta}. Por favor, acuse
+        o recebimento deste e-mail.`)
+    } else if (consulta.cancelada === true && consulta.genero === "masculino"){
+        return (`Olá, ${senhor} ${consulta.nome}. Infelizmente, sua consulta marcada
+        para o dia ${consulta.dataDaConsulta} foi cancelada. Se quiser, pode entrar em 
+        contato conosco para remarcá-la`)
+    } else if(consulta.cancelada === true && consulta.genero === "feminino"){
+        return (`Olá, ${senhora} ${consulta.nome}. Infelizmente, sua consulta marcada
+        para o dia ${consulta.dataDaConsulta} foi cancelada. Se quiser, pode entrar em 
+        contato conosco para remarcá-la`)
+    }
+    
+})
+console.log(consultasCanceladas)      */
