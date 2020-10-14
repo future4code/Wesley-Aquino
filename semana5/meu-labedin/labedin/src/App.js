@@ -22,15 +22,11 @@ function App() {
       </div>
 
       <div className="card-pequeno">
-        <CardPequeno
-          email="wesleydev@developers.com"
-        />
+        <CardPequeno email={"Email: wesleydev@developers.com"} />
       </div>
-
+        
       <div className="card-pequeno">
-        <CardPequeno
-        endereco="Rua dos bobos 0. Casa engraçada"
-        />
+        <CardPequeno endereco={"Endereço: Rua dos bobos 0. Casa engraçada"}/>
       </div>
 
       <div className="page-section-container">
