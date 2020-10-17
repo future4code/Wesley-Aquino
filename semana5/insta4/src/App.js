@@ -3,30 +3,46 @@ import './App.css';
 import Post from './components/Post/Post';
 
 
+
 class App extends React.Component {
+  state = {
+    posts: [{
+      nomeUsuario: 'carlinhos',
+      fotoUsuario: 'https://picsum.photos/50/50',
+      fotoPost: 'https://picsum.photos/200/150'
+      },
+      {
+        nomeUsuario:'mariazinha',
+        fotoUsuario:'https://picsum.photos/200/300?random=1',
+        fotoPost:'https://picsum.photos/200/150?random=2',
+      },
+      {
+        nomeUsuario:'zezinho',
+        fotoUsuario:'https://picsum.photos/200/300?random=3',
+        fotoPost:'https://picsum.photos/200/150?random=4'
+      }]
+  }
+
   render() {
-    return (
-      <div className={'app-container'}>
+
+    const listaDePosts = this.state.posts.map((post) => {
+      return (
+        <div>
         <Post
-          nomeUsuario={'carlinhos'}
-          fotoUsuario={'https://picsum.photos/50/50'}
-          fotoPost={'https://picsum.photos/200/150'}
-          />
-
-          <Post
-          nomeUsuario={'mariazinha'}
-          fotoUsuario={'https://picsum.photos/200/300?random=1'}
-          fotoPost={'https://picsum.photos/200/150?random=2'}
+          nomeUsuario={post.nomeUsuario}  
+          fotoUsuario={post.fotoUsuario} 
+          fotoPost={post.fotoPost}
         />
+        </div>
+      )
+    })
 
-          <Post
-          nomeUsuario={'zezinho'}
-          fotoUsuario={'https://picsum.photos/200/300?random=3'}
-          fotoPost={'https://picsum.photos/200/150?random=4'}
-        />
+    return (
+      <div>
+        <div>{listaDePosts}</div>
       </div>
-    );
+    )
   }
 }
-
 export default App;
+ 
