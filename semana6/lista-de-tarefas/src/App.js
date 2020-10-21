@@ -27,11 +27,13 @@ class App extends React.Component {
       }
 
   componentDidUpdate() {
-
+    localStorage.setItem("tarefa", JSON.stringify(this.state.tarefas))
   };
 
   componentDidMount() {
-
+    if (localStorage.getItem("tarefa")) {
+      this.setState({tarefas: JSON.parse(localStorage.getItem("tarefa"))})
+    }
   };
 
   onChangeInput = (event) => {
@@ -68,7 +70,7 @@ class App extends React.Component {
   }
 
   onChangeFilter = (event) => {
-
+    this.setState({filtro: event.target.value})
   }
 
   render() {
