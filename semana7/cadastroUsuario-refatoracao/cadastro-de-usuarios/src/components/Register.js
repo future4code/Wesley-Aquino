@@ -4,12 +4,21 @@ import styled from 'styled-components';
 
 const Container = styled.div`
 text-align: center;
-font-size: 2vw;
+font-size: 1vw;
 `
 const Input =  styled.input`
 height: 2vw;
 width: 20vw;
+font-size: 1vw;
+border-radius: 1vw;
 `
+const DivBotao = styled.button`
+height: 3vw;
+width: 5vw;
+margin: 1vw;
+background-color: blue;
+`
+
 
 class Register extends React.Component {
     state = {
@@ -69,7 +78,10 @@ render() {
         value={this.state.userEmail}
         onChange={this.onChangeEmailValue}
         />
-        <button onClick={this.createUser}>Salvar</button>        
+        <br/>
+        <DivBotao>
+        <button onClick={this.createUser}>Salvar</button>
+        </DivBotao>
 
 
     </Container>

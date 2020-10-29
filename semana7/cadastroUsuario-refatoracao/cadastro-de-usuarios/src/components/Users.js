@@ -3,8 +3,12 @@ import axios from 'axios';
 import styled from 'styled-components';
 
 const ButtonDelete = styled.button`
-color: orange;
+color: red;
+margin: 1vw;
 `
+const Container = styled.p`
+`
+
 const baseUrl = "https://us-central1-labenu-apis.cloudfunctions.net/labenusers/users"
 
 const axiosConfig = {
@@ -40,6 +44,8 @@ class Users extends React.Component {
     };
 
     toDeleteUser = (idUser) => {
+        const confirm = window.confirm("Deseja mesmo deletar?")
+        if(confirm === true) {
         axios.delete(`${baseUrl}/${idUser}`, axiosConfig)
         .then((response) => {
             alert("Usuário Deletado! Yeeaaah");
@@ -49,16 +55,21 @@ class Users extends React.Component {
             console.log(error.message)
         })
     }
+}
+
+userDetails = () => {
+    return 
+}
 
 render() {
     const nameList = this.state.users.map((user) => {
-        return <p key={user.id}>{user.name}
+        return <Container key={user.id}>{user.name}
         <ButtonDelete onClick={() => this.toDeleteUser(user.id)}>Deletar</ButtonDelete>
-        </p>;
+        </Container>;
     });
 
     return <div>
-        {nameList}
+        <p onClick={this.userDetails}>{nameList}</p>
     </div>
 
 }
