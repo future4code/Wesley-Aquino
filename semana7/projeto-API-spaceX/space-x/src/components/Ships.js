@@ -4,26 +4,26 @@ import styled from 'styled-components';
 
 class Ships extends React.Component {
     state = {
-        shipLoad: null
+        shipLoad: []
     }
 
 loadShips = () => {
     const apiUrl = "https://api.spacexdata.com/v3/ships";
     axios.get(apiUrl).then((response) => {
-        console.log("resposta", response)
-        this.setState({ shipLoad: response.data.ship_name});
+        this.setState({ shipLoad: response.data});
+
     })
 }
 
     render() {
+        const shipList = this.state.shipLoad.map((ship) => {
+        return <p>{ship.ship_name}</p>
+        })
         return <div>
+           
+            <h3>Clique para ver nossas Naves:</h3>
+            <p>{shipList}</p>
             <button onClick={this.loadShips}>Carregar Naves</button>
-            {this.state.shipLoad && (
-                <div>
-                    <p>Nome: {this.state.shipLoad.name}</p>
-                </div>
-            )}
-            <h2>Nossas Naves</h2>
             
         </div>
 

@@ -44,8 +44,7 @@ class App extends React.Component {
   }
 
   render() {
-    console.log('Pagina de Naves', this.state.onShips)
-    const currentPage = this.state.onShips ? <Home /> : <Ships />
+    const currentPage = this.state.onShips ? <Ships /> : <Home />
     
   return (
     <AppContainer>
