@@ -7,7 +7,9 @@ import Playlists from './components/Playlists/Playlists';
 import PlaylistDetails from './components/Playlists/PlaylistsDetails';
 
 const AppContainer = styled.div`
-background-color: green;
+border: 1px soli blue;
+display: flex;
+flex-direction: row;
 `
 
 
@@ -20,6 +22,7 @@ class App extends React.Component {
     <AppContainer>
      <Home />
      <Playlists />
+     <PlaylistDetails />
      
      
     </AppContainer>
