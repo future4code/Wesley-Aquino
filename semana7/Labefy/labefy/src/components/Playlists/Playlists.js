@@ -180,9 +180,8 @@ playlistDetails = (playlistId) => {
         const detailList = this.state.playlistDetailed.map((track) => {
         return <TrackItem>
             <br/>
-            <p>{track.name}</p>
-            <p>{track.artist}</p>
-            <p>{track.url}</p>
+            <p>{track.name} - {track.artist}</p>
+            <audio src={track.url} controls></audio>
             <br/>
             </TrackItem>
         })
