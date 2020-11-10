@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import "./styles.css";
 import axios from "axios";
-import PokeCard from "./PokeCard";
+import PokeCard from "./components/PokeCard";
 
 function App() {
   const [pokeList, setPokeList] = useState([])
-  const [pokeName, setPokeName] = usestate("")
+  const [pokeName, setPokeName] = useState("")
 
   useEffect (() => {
     pegaPokemon()
@@ -23,8 +23,6 @@ const pegaPokemon = () => {
      console.log(err);
    });
 }
-
-  };
 
   const changePokeName = event => {
     setPokeName(event.target.value);
@@ -49,6 +47,6 @@ const pegaPokemon = () => {
         {pokeName && <PokeCard pokemon={pokeName} />}
       </div>
     );
-
+  }
 
 export default App;
