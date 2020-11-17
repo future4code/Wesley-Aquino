@@ -1,24 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import axios from 'axios';
+import styled from 'styled-components';
+import Home from './pages/Home';
+import Login from './pages/Login';
+import Manage from './pages/Manage';
+import Subscribe from './pages/Subscribe';
+import NewTrip from './pages/NewTrip';
+import TripList from './pages/TripList';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+
+
+const AppContainer = styled.div`
+text-align: center;
+`
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  <BrowserRouter>
+    <Switch>
+      <Route exact path="/">
+        <Home />
+      </Route>
+      <Route exact path="/subscribe">
+        <Subscribe />
+      </Route>
+      <Route exact path="/login">
+        <Login />
+      </Route>
+      
+
+    </Switch>
+   </BrowserRouter>
   );
 }
 
