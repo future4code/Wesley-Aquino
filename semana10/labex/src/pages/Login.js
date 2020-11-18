@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import axios from 'axios';
 import styled from 'styled-components';
+import { useHistory } from 'react-router-dom';
 
 const Container = styled.div`
 display: flex;
@@ -50,15 +51,56 @@ text-align: center;
 `
 
 function Login() {
+    const [email, setEmail] = useState("")
+    const [password, setPassword] = useState("")
+    const history = useHistory()
+
+    useEffect(() => {
+        const token = localStorage.getItem("token")
+
+        if(token) {
+            history.push("/gerenciar")
+        }
+    }, [history])
+
+    const getEmail = (event) => {
+        setEmail(event.target.value)
+    }
+
+    const getPassword = (event) => {
+        setPassword(event.target.value)
+    }
+
+    const goBack = () => {
+        history.goBack()
+    }
+
+    const login = () => {
+        const body = {
+            email: email,
+            password: password
+        }
+        axios.post("https://us-central1-labenu-apis.cloudfunctions.net/labeX/wesley-dumont/login", body)
+        .then((response) => {
+            localStorage.setItem("token", response.data.token)
+            history.push("/gerenciar")
+        })
+        .catch((error) => {
+            console.log(error);
+        })
+    }
+
+
     return(
     <Div>
     <Container>
         <h1>Login</h1>
-        <Input placeholder="Email"></Input>
+        <Input value={email} onChange={getEmail} placeholder="Email"></Input>
         <br/>
-        <Input placeholder="Senha"></Input>
+        <Input value={password} onChange={getPassword} placeholder="Senha"></Input>
         <br/>
-        <Button>Entrar</Button>
+        <Button onClick={login}>Entrar</Button>
+        <Button onClick={goBack}>Voltar</Button>
     </Container>
     </Div>
     )

@@ -9,10 +9,6 @@ import TripList from './pages/TripList';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 
-const AppContainer = styled.div`
-text-align: center;
-`
-
 function App() {
   return (
   <BrowserRouter>
@@ -20,11 +16,20 @@ function App() {
       <Route exact path="/">
         <Home />
       </Route>
-      <Route exact path="/subscribe">
+      <Route exact path="/application-form">
         <Subscribe />
       </Route>
       <Route exact path="/login">
         <Login />
+      </Route>
+      <Route exact path="/gerenciar">
+        <Manage />
+      </Route>
+      <Route exact path="/gerenciar/criarviagem">
+        <NewTrip />
+      </Route>
+      <Route exact path="/gerenciar/listarviagens">
+        <TripList />
       </Route>
       
 
