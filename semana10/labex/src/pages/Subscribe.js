@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import axios from 'axios';
 import styled from 'styled-components';
 import loginimage from '../img/login-image.jpg';
@@ -50,8 +50,22 @@ text-align: center;
 `
 
 function Login() {
+    const [name, setName] = useState("")
+    const [age, setAge] = useState("")
+    const [applytext, setApplyText] = useState("")
+    const [profession, setProfession] = useState("")
+    const [country, setCountry] = useState("")
+    const history = useHistory()
 
-const history = useHistory()
+    useEffect(() => {
+        
+    }, [])
+
+    const subscribe = () => {
+        axios.post("https://us-central1-labenu-apis.cloudfunctions.net/labeX/:aluno/trips/:id/apply")
+    }
+
+
 const goToHome = () => {
     history.push("/")
 }
