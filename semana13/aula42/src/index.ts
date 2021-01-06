@@ -20,8 +20,6 @@ app.get("/countries/all", (req: Request, res: Response) => {
 
 
 
-
-
 app.listen(3003, () => {
     console.log("Server is running in http://localhost:3003")
 })
