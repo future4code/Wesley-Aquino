@@ -1,0 +1,1 @@
+1) a) Precisamos usar o process.argv[] e informar o índice do parametro desejado 
