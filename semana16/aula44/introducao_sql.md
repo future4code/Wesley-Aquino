@@ -149,6 +149,23 @@ WHERE name = "Tropa de Elite"
 c) SELECT id, name, synopsis FROM Movie
 WHERE rating >=7
 
+Exercicio 7
+
+a) SELECT name FROM Movie
+WHERE name LIKE "%elite%"
+
+b) SELECT name FROM Movie 
+WHERE name LIKE "%Elite%" OR synopsis LIKE "%Elite%"
+
+c) SELECT name FROM Movie
+WHERE date_movie <= "2021-01-10";
+
+d) SELECT name FROM Movie
+WHERE (date_movie <= "2021-01-10") AND (name LIKE "%Elite%" OR synopsis LIKE "%Elite%") AND (rating >= 7)
+
+
+
+
 
 
 
