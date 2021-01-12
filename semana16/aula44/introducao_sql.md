@@ -78,7 +78,22 @@ d) SELECT id, name, salary FROM Actor WHERE salary <= 500000
 e) Error Code: 1054. Unknown column 'nome' in 'field list' Coluna "nome" desconhecida
    Correção: SELECT id, name from Actor WHERE id = "03";
 
-   
+Exercicio 4
+
+a) A Query busca em todos os atores os que começam com A ou J utilizando a % e o salário maior que 300000 atraves do > 300000
+
+b) SELECT * FROM Actor
+WHERE (name NOT LIKE "A%") AND salary > 350000
+
+c) SELECT * FROM Actor
+WHERE name LIKE "%g%" OR name LIKE "%G%";
+
+d) SELECT * FROM Actor
+WHERE (name LIKE "%a%" OR name LIKE "%A%" OR name LIKE "%g%" OR name LIKE "%G%") 
+AND salary BETWEEN 3500000 AND 900000;
+
+
+
 
 
 
