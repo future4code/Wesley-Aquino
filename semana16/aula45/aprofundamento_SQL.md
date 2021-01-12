@@ -36,6 +36,14 @@ Error Code: 1054. Unknown column 'hometown' in 'field list'
 
 Nesta Query foi solicitado pra atualizar a coluna "hometown" que inexistente nessa tabela, por isso ele me informa o erro que a coluna "hometown" é desconhecida nessa lista.
 
+Exercicio 3
+
+a) DELETE FROM Actor WHERE name = "George Clooney"; obs.: Tinha criado a lista com outros atores
+
+b) DELETE FROM Actor WHERE (gender = "male") AND (salary > 1000000);
+
+
+
 
 
 
