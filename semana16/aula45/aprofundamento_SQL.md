@@ -65,6 +65,20 @@ d) SELECT * FROM Actor ORDER BY salary DESC LIMIT 3;
 e) SELECT AVG(salary), gender FROM Actor
 GROUP BY gender;
 
+Exercicio 6
+
+a) ALTER TABLE Movie ADD playing_limit_date DATE DEFAULT "2022-10-10";
+
+b) ALTER TABLE Movie CHANGE rating rating FLOAT;
+
+c) UPDATE Movie SET playing_limit_date = "2021-01-10" WHERE id = "001";
+   UPDATE Movie SET playing_limit_date = "2021-03-05" WHERE id = "002";
+
+d) UPDATE Movie SET synopsis = "Em uma terra fantástica e única, um hobbit recebe de presente de seu tio um anel mágico e maligno que precisa ser destruído antes que caia nas mãos do mal. Para isso, o hobbit Frodo tem um caminho árduo pela frente, onde encontra perigo, medo e seres bizarros. Ao seu lado para o cumprimento desta jornada, ele aos poucos pode contar com outros hobbits, um elfo, um anão, dois humanos e um mago, totalizando nove seres que formam a Sociedade do Anel."
+WHERE id = "003";
+
+Ao excluir o filme exclui-se automaticamente a linha, fazendo com que ao tentar atualizar algo em uma linha que não existe ele responde que nenhuma linha foi afetada com essa mudança, o motivo é que a linha não existe mais.
+
 
 
 
