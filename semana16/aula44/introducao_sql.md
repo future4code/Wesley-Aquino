@@ -65,6 +65,24 @@ VALUES (
 "male"
 );
 
+Exercício 3
+
+a) SELECT salary FROM Actor WHERE name = "Angelina Jolie"
+
+b) SELECT salary FROM Actor WHERE name = "Angelina Jolie"
+
+c) SELECT id, name, salary, birth_date FROM Actor WHERE gender = "invalid" Não retorna nenhuma informação porque não há o gender "invalid" cadastrado no DB.
+
+d) SELECT id, name, salary FROM Actor WHERE salary <= 500000
+
+e) Error Code: 1054. Unknown column 'nome' in 'field list' Coluna "nome" desconhecida
+   Correção: SELECT id, name from Actor WHERE id = "03";
+
+   
+
+
+
+
 
 
 
