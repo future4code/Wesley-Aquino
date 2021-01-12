@@ -93,6 +93,23 @@ e) SELECT MAX(rating) FROM Movie;
 
 f) SELECT MIN(rating) FROM Movie;
 
+Exercício 8
+
+a) SELECT * FROM Movie
+ORDER BY name ASC;
+
+b) SELECT * FROM Movie
+ORDER BY name DESC
+LIMIT 5;
+
+c) SELECT * FROM Movie
+ORDER BY date_movie DESC
+LIMIT 3;
+
+d) SELECT * FROM Movie
+ORDER BY rating DESC
+LIMIT 3;
+
 
 
 
