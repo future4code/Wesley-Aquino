@@ -79,6 +79,20 @@ WHERE id = "003";
 
 Ao excluir o filme exclui-se automaticamente a linha, fazendo com que ao tentar atualizar algo em uma linha que não existe ele responde que nenhuma linha foi afetada com essa mudança, o motivo é que a linha não existe mais.
 
+Exercício 7
+
+a) SELECT COUNT(*) FROM Movie WHERE rating > 7.5;
+
+b) SELECT AVG(rating) FROM Movie;
+
+c) SELECT COUNT(*) FROM Movie WHERE playing_limit_date >= "2021-01-12";
+
+d) SELECT COUNT(*) FROM Movie WHERE date_movie > "2021-01-12";
+
+e) SELECT MAX(rating) FROM Movie;
+
+f) SELECT MIN(rating) FROM Movie;
+
 
 
 
