@@ -52,6 +52,19 @@ c) SELECT COUNT(*) FROM Actor WHERE gender = "female";
 
 d) SELECT SUM(salary) FROM Actor;
 
+Exercício 5
+
+a) Essa query conta os atores de acordo com  genero e agrupa, mostrando quantos são "male" e quantos são "female", através do GROUP BY "gender".
+
+b) SELECT id, name FROM Actor ORDER BY name DESC;
+
+c) SELECT * FROM Actor ORDER BY salary ASC;
+
+d) SELECT * FROM Actor ORDER BY salary DESC LIMIT 3;
+
+e) SELECT AVG(salary), gender FROM Actor
+GROUP BY gender;
+
 
 
 
