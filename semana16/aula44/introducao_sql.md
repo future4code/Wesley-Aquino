@@ -138,6 +138,19 @@ VALUES (
 "9"
 );
 
+Exercicio 6
+
+a) SELECT id, name, rating FROM Movie
+WHERE id = "003"
+
+b) SELECT name FROM Movie
+WHERE name = "Tropa de Elite"
+
+c) SELECT id, name, synopsis FROM Movie
+WHERE rating >=7
+
+
+
 
 
 
