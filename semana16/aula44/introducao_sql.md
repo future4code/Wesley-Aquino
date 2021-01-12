@@ -92,6 +92,53 @@ d) SELECT * FROM Actor
 WHERE (name LIKE "%a%" OR name LIKE "%A%" OR name LIKE "%g%" OR name LIKE "%G%") 
 AND salary BETWEEN 3500000 AND 900000;
 
+Exercicio 5
+
+a) CREATE TABLE Movie (
+id VARCHAR(255) PRIMARY KEY,
+name VARCHAR(255) NOT NULL,
+synopsis TEXT NOT NULL,
+date_movie DATE NOT NULL,
+rating INT NOT NULL
+)
+
+b) INSERT INTO Movie (id, name, synopsis, date_movie, rating)
+VALUES (
+"001",
+"Se Eu Fosse Você",
+"Cláudio e Helena são casados há muitos anos e enfrentam a rotina do casamento. Um dia eles são atingidos por um fenômeno inexplicável e trocam de corpos",
+"2006-01-06",
+"7"
+);
+
+c) INSERT INTO Movie (id, name, synopsis, date_movie, rating)
+VALUES (
+"002",
+"Doce de mãe",
+"Dona Picucha, uma animada senhora de 85 anos, sempre causa grandes confusões. A vida dela e dos seus quatro filhos sofre uma reviravolta depois que Zaida, empregada e amiga de Dona Picucha, anuncia que vai se casar e não poderá mais morar com ela",
+"2012-12-27",
+"10"
+);
+
+d) INSERT INTO Movie ( id, name, synopsis, date_movie, rating)
+VALUES (
+"003",
+"Dona Flor e Seus Dois Maridos",
+"Dona Flor é uma sedutora professora de culinária casada com Vadinho, que só quer saber de farras e jogatina nas boates. A vida de abusos acaba por acarretar sua morte precoce.",
+"2017/11/02",
+8
+);
+
+e) INSERT INTO Movie (id, name, synopsis, date_movie, rating)
+VALUES (
+"004",
+"Tropa de Elite",
+"O capitão da força especial da Polícia Militar do Rio de Janeiro treina dois recrutas novatos para que possam sucedê-lo.",
+"2007-10-05",
+"9"
+);
+
+
 
 
 
