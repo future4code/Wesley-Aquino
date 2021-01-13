@@ -49,29 +49,9 @@ async function testEndpoint(req:Request, res:Response): Promise<void>{
   } catch (error) {
     res.status(400).send(error.message)
   }
-}
+}  
 
-/**************************************************************/
-
-
-const getActorById = async (id: string): Promise<any> => {
-  
-  try { const result = await connection.raw(`
-    SELECT * FROM Actor WHERE id = '${id}'
-  `)
-  console.log(result[0])
-
-  return result[0]
-
-
-  } catch (error) {
-      console.log(error.sqlMessage || error.message)
-
-    }
-  }
-  
-
-/********************************************************/
+/*************************Letra B********************************/
 
 const getActorByName = async (name: string): Promise<any> => {
   
@@ -87,10 +67,9 @@ const getActorByName = async (name: string): Promise<any> => {
       console.log(error.sqlMessage || error.message)
 
     }
-  }
-  
+  }  
 
-  /********************************************************/
+  /**********************Letra C**********************************/
 
   const getActorByGender = async (gender: string): Promise<any> => {
   
@@ -107,4 +86,51 @@ const getActorByName = async (name: string): Promise<any> => {
   
       }
     }
+
+    //Exercicio 2
+    /************************Letra A***********************************/
+
+    const updateActor = async (
+      id: string,
+      salary: number
+    ): Promise<void> => {
+      await connection("Actor").update({
+        salary: salary
+      })
+      .where("id", id)
+    }
+    
+
+    /********************Letra B**************************************/
+
+    const deleteActor = async (
+      id: string
+    ): Promise<void> => {
+      await connection("Actor").delete()
+      .where("id", id)
+    }
+    
+
+    /*********************Letra C**************************************/
+
+    const calcAverage = async (gender: string): Promise<any> => {
+      const result = await connection("Actor").avg("salary as salary")
+      .where({gender})
+
+      console.log(result[0])
+
+      return result[0]
+    }
+    calcAverage("male")
+
+    //Exercicio 3
+
+    /********************Letra A**************************************/
+
+
+
+
+
+
+
     

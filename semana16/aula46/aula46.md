@@ -44,4 +44,43 @@ const getActorByGender = async (gender: string): Promise<any> => {
 
 # Exercício 2
 
+* a)
+```
+const updateActor = async (
+      id: string,
+      salary: number
+    ): Promise<void> => {
+      await connection("Actor").update({
+        salary: salary
+      })
+      .where("id", id)
+    }
+    updateActor("05", 600000)
+```
+* b) 
+
+```
+const deleteActor = async (
+      id: string
+    ): Promise<void> => {
+      await connection("Actor").delete()
+      .where("id", id)
+    }
+    deleteActor("08")
+```
+* c)
+
+```
+const calcAverage = async (gender: string): Promise<any> => {
+      const result = await connection("Actor").avg("salary")
+      .where({gender})
+
+      console.log(result[0])
+
+      return result[0].average
+    }
+    
+    calcAverage("male")
+```
+
 
