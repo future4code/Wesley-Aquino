@@ -82,5 +82,50 @@ const calcAverage = async (gender: string): Promise<any> => {
     
     calcAverage("male")
 ```
+# Exercicio 3
+
+* a)
+
+```
+const getActorById = async (id: string): Promise<any> => {
+      const result = await connection.raw(`SELECT * FROM Actor WHERE id = '${id}'`)
+
+      return result[0]
+    }
+
+app.get("/actor/:id", async (req: Request, res: Response) => {
+  try {
+    const id = req.params.id;
+    const actor = await getActorById(id)
+
+    res.status(200).send(actor)
+  } catch (err) {
+    res.status(400).send({message: err.message})
+  }
+})
+```
+b)
+
+```
+const countActors = async (gender: string): Promise<any> => {
+  const result: any = await connection.raw(`SELECT COUNT(gender) FROM Actor WHERE gender = '${gender}'`)
+
+  console.log(result[0])
+  return result[0]
+
+}
+
+app.get("/actor", async (req: Request, res: Response) => {
+  try {
+    const gender: string = req.query.gender as string
+    const count = await countActors(gender)
+    res.status(200).send(count)
+  } catch (err) {
+    res.status(400).send(err.message)
+  }
+})
+```
+
+
 
 
