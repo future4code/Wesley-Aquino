@@ -25,8 +25,7 @@ app.use(cors())
 
 // endpoints aqui
 
-/****************************************************************************/
-   
+/******************************EXERCICIO 1**********************************************/
 
 
 app.put("/user", async (req: Request, res: Response) => {
@@ -55,8 +54,6 @@ app.put("/user", async (req: Request, res: Response) => {
 });
 
 
-
-/****************************************************************************/
 async function createNewUser(user: user): Promise<void> {
    try {
 
@@ -76,6 +73,23 @@ async function createNewUser(user: user): Promise<void> {
 
    }
 }
+/*****************************EXERCICIO 2***********************************************/
+
+app.get("/user/:id", async (req: Request, res: Response) => {
+ try {
+    const userById: any = await connection.raw(`select * from TodoListUser where id = "${req.params.id}"`)
+
+    if(!userById.length) {
+       res.statusCode = 404
+       throw new Error("No user found here!")
+    }
+    res.status(200).send(userById[0])
+
+ } catch (error) {
+
+   res.send(error.message)
+ }
+})
 
 
 
