@@ -4,6 +4,8 @@ import cors from "cors";
 import dotenv from "dotenv";
 import { AddressInfo } from "net";
 
+import { user } from "./types/users"
+
 dotenv.config();
 
 export const connection = knex({
@@ -24,19 +26,56 @@ app.use(cors())
 // endpoints aqui
 
 /****************************************************************************/
-app.put("/user", (req: Request, res: Response) => {
+   
+
+
+app.put("/user", async (req: Request, res: Response) => {
+
+   let errorCode: number = 400;
 
    try{
-      let reqBody:
+      let result: user = {
+         id: Date.now(),
+         name: req.body.name,
+         nickname: req.body.nickname,
+         email: req.body.email
+      }
 
-
+      if(!result.name || !result.nickname || !result.email){
+         errorCode = 422;
+         throw new Error("Algo de errado não está certo! Tente Novamente!")
+      } 
+      await createNewUser(result)
+      res.status(200).send("Usuário cadastrado com sucesso!")
 
    } catch (error){
       res.status(400).send(error.message)
 
    }
-
 });
+
+
+
+/****************************************************************************/
+async function createNewUser(user: user): Promise<void> {
+   try {
+
+      await connection.raw(`
+         INSERT INTO TodoListUser (id, name, nickname, email)
+         VALUES(
+            ${user.id},
+            "${user.name}",
+            "${user.nickname}",
+            "${user.email}"
+         )
+      `)
+
+   }catch (error) {
+
+      console.log(error.sqlMessage || error.message)
+
+   }
+}
 
 
 
