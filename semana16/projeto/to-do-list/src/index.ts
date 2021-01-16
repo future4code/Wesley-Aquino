@@ -91,6 +91,50 @@ app.get("/user/:id", async (req: Request, res: Response) => {
  }
 })
 
+/*****************************EXERCICIO 3***********************************************/
+app.post("/user/edit/:id", async (req: Request, res: Response) => {
+
+   let errorCode: number = 400;
+
+   try{
+      let result: user = {
+         id: req.body.id,
+         name: req.body.name,
+         nickname: req.body.nickname,
+         email: req.body.email
+      }
+
+      if(!result.name || !result.nickname || !result.email){
+         errorCode = 422;
+         throw new Error("Algo de errado não está certo! Tente Novamente!")
+      } 
+      await editUser(result)
+      res.status(200).send("Usuário atualizado com sucesso!")
+
+   } catch (error){
+      res.status(400).send(error.message)
+
+   }
+});
+
+
+async function editUser(user: user): Promise<void> {
+   try {
+
+      await connection.raw(`
+         UPDATE TodoListUser SET
+         name = "${user.name}",
+         nickname = "${user.nickname}", 
+         email = "${user.email}"
+         WHERE id = ${user.id}
+      `)
+
+   }catch (error) {
+
+      console.log(error.sqlMessage || error.message)
+
+   }
+}
 
 
 /****************************************************************************/
