@@ -3,6 +3,7 @@ import express from "express";
 import dotenv from "dotenv";
 import { AddressInfo } from "net";
 import { generate } from "./services/generateId";
+import createUser from "./endpoints/createUser";
 
 console.log(generate())
 
@@ -21,6 +22,8 @@ export const connection = knex({
     database: process.env.DB_DATABASE_NAME,
   },
 });
+
+app.post("/createuser", createUser)
 
 
 

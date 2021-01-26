@@ -12,3 +12,8 @@ email varchar(255) unique not null,
 senha varchar(255) not null
 )
 
+# Exercício 3
+
+* a) as string é necessário porque esse código vai esperar algo como string ou undefined e é necessário garantir que ele vai receber um string.
+
+

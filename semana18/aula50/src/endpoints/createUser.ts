@@ -18,6 +18,7 @@ export default async function createUser(req: Request, res: Response){
             req.body.email,
             req.body.password
         )
+        res.status(200).send("Ok")
 
     }catch(error) {
         res.status(400).send(error.message || error.sqlMessage)
