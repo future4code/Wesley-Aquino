@@ -8,6 +8,7 @@ import editUser from './endpoints/editUser'
 import createTask from './endpoints/createTask'
 import getTaskById from './endpoints/getTaskById'
 import login from './endpoints/login'
+import { getAddressInfo } from './endpoints/getAddressInfo'
 
 dotenv.config()
 
@@ -38,6 +39,8 @@ app.post('/user/edit', editUser)
 
 app.put('/task', createTask)
 app.get('/task/:id', getTaskById)
+
+app.get("/address/:cep", getAddressInfo)
 
 app.listen(3003, () => {
    console.log('Servidor rodando na porta 3003')
