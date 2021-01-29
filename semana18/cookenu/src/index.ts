@@ -5,6 +5,8 @@ import { AddressInfo } from "net";
 import signup from "./endpoints/signup";
 import login from "./endpoints/login";
 import getOwnUser from "./endpoints/getOwnUser";
+import createRecipe from "./endpoints/createRecipe";
+import followUser from "./endpoints/followUser";
 
 
 
@@ -40,6 +42,8 @@ app.use(express.json());
 
 app.post("/signup", signup);
 app.post("/login", login)
+app.post("/create/recipe", createRecipe)
+app.post("/follow", followUser)
 
 app.get("/getUser", getOwnUser)
 
